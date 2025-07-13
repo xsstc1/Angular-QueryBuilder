@@ -9,22 +9,7 @@
         [disabled]="disabled()"
       ></p-selectButton>
 
-      <button pButton
-              class="pi icon-add"
-              (click)="addRule()"
-              [raised]="true"
-              [disabled]="disabled()"
-              [pTooltip]="(showTooltip())?queryBuilderText.tooltip.new_rule:''"
-      ></button>
-
-      <button pButton
-              *ngIf="allowGroups()"
-              class="pi icon-add-rulset"
-              (click)="addGroup()"
-              [raised]="true"
-              [disabled]="disabled()"
-              [pTooltip]="(showTooltip())?queryBuilderText.tooltip.new_group_rule:''"
-      ></button>
+      
 
       <button
         pButton
@@ -176,5 +161,23 @@
         ></app-query-builder>
       </div>
     </div>
+    <button pButton
+              class="pi"
+              (click)="addRule()"
+              [raised]="true"
+              [disabled]="disabled()"
+              [pTooltip]="(showTooltip())?queryBuilderText.tooltip.new_rule:''"
+              style="margin-right: 8px;"
+      >Add rule</button>
+
+      <button pButton
+              *ngIf="allowGroups()"
+              class="pi"
+              (click)="addGroup()"
+              [raised]="true"
+              [disabled]="disabled()"
+              [pTooltip]="(showTooltip())?queryBuilderText.tooltip.new_group_rule:''"
+      >Add group</button>
   </div>
+  
 </div>

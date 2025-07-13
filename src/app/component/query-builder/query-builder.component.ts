@@ -42,8 +42,8 @@ const queryBuilderText = {
     between: "Entre"
   },
   conditions: {
-    and: "Y",
-    or: "O"
+    and: "AND",
+    or: "OR"
   }
 };
 
